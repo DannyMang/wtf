@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    #apiKey {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #explanation {
+      margin-top: 10px;
+      white-space: pre-wrap;
+    }
+    .info {
+      margin: 10px 0;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .instructions {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 4px;
+    }
+    a {
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="info">
+    Get your API key from <a href="https://console.groq.com/keys" target="_blank">Groq Console</a>
+  </div>
+  <input type="password" id="apiKey" placeholder="Enter your Groq API key">
+  <button id="saveKey">Save API Key</button>
+  <div class="instructions">
+    <strong>How to use:</strong>
+    <ol>
+      <li>Highlight any text on a webpage</li>
+      <li>Press the 'E' key</li>
+      <li>Wait for the explanation to appear!</li>
+    </ol>
+  </div>
+  <div id="explanation">Ready to explain!</div>
+  <script src="popup.js"></script>
+</body>
+</html> 
